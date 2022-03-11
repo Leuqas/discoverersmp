@@ -1,0 +1,173 @@
+mcb:
+  responselevel:
+    lvl1: "Success"
+    lvl2: "Warning"
+    lvl3: "Error"
+    default: "Response"
+  event:
+    start: "The server have successfully started!"
+    shut: "The server is shutting down!"
+  command:
+    no-perm-message: "Scuze dar nu ai acces la această comandă."
+    invalid-arguments: "Argumente invalide."
+    invalid-tc: "Canal de text invalid pentru comandă."
+    no-alias: "Nu mai sunt alte denumiri pentru aceasta comandă."
+    fatal-error: "O eroare fatală s-a întâmplat înainte ca comanda %s să se termine de executat."
+  commands:
+    perm:
+      description: "Administrează permisiunile pentru categorii."
+      invalid-sub: "%s nu este o subcomandă."
+      no-role: "Rolul %s nu există în acest guild."
+      sub:
+        set:
+          description: "Setează rolul pentru anumite categorii. \nFolosire: {+} pentru a permite {-} pentru a preveni. \nIndicatoare: {-<comandă|categorie|toate(=all)>} or {+<comandă|categorie|toate(=all)}. \nex: {-tps} | {+info}"
+          invalid-flag: "%s este un indicator invalid."
+          flag-not-null: "Trebuie sa furnizezi indicatoare!"
+          all-invalid-flags: "Toate indicatoarele furnizate sunt invalide."
+          success: "Permisiunile setate cu succes pentru %s"
+          omitted-flags: "Următoarele indicatoare sunt invalide sau au fost omise: %s"
+          added: "Următoarele au fost adăugate: %s"
+        check:
+          description: "Verifică indicatoarele de permisiune curente a unui rol."
+          all-description: "Toate rolurile care au indicatoare de permisiune și indicatoarele corespondente lor"
+          success: "%s indicatoare de permisiune."
+          role-no-perm: "%s nu are niciun indicator de permisiune."
+        remove:
+          description: "Șterge un indicator de permisiune sau toate indicatoarele a unui rol."
+          success-single: "Indicatorul de permisiune %s a fost șters de la %s."
+          success-ignore: "Indicatoarele de permisiune au fost șterse cu succes de la %s"
+          success-ignore-detail: "%s nu are următoarele indicatoare și a fost ignorat: %s"
+          success-provided: "Indicatoarele de permisiune au fost șterse cu succes de la %s"
+          success-provided-detail: "Permisiune nouă: %s"
+          success-all: "Toate indicatoarele de permisiune au fost șterse de la %s"
+          success-all-detail: "Șterse: %s"
+          role-no-perm: "%s nu are niciun indicator de permisiune."
+          role-no-specific-perm: "%s nu are următoarele indicatoare de permisiune: %s."
+    mcserver:
+      description: "Se uită despre informațiile serverlor."
+      cannot-find: "Nu se poate da ping la server."
+      error: "A fost o eroare când s-a dat ping la server."
+    mcskin:
+      description: "Se uită despre înfățișarea cuiva."
+      cannot-find: "Nu se poate găsi înfățișarea jucătorului."
+      error: "A fost o eroare când s-a procesat cererea."
+    tps:
+      description: "Verifică tps a unui server și alte informații."
+      title: "Tick-urile serverului în fiecare secundă și utilizarea memoriei."
+    mcusername:
+      description: "Caută numele utilizatorului pe baza unui uuid."
+      cannot-find: "Nu se poate găsi numele utilizatorului pentru acest uuid! Are acest jucător un cont premium?"
+      error: "Nu s-a putut procesa cererea. Este serverul Mojang căzut?"
+    mcuuid:
+      description: "Caută uuid a unui jucător."
+      cannot-find: "Nu se poate găsi jucătorul! Are acest jucător un cont premium?"
+      error: "Nu s-a putut procesa cererea. Este serverul Mojang căzut?"
+    mcstat:
+      description: "Arată stările serviciilor Mojang"
+    start:
+      description: "pornește bot-ul."
+      starting: "Se pornește bot-ul...."
+    spoiler:
+      description: "creează un spoiler gif"
+      includeText: "te rog furnizează text pentru spoiler"
+      tooManyLines: "sunt prea multe linii. Nu pot fi mai multe decât 8"
+      --==--spoilerPreview: "[ Ține cursorul pentru a vedea spoiler-ul ]"
+      failedToGenerate: "generarea imaginii de spoiler a eșuat"
+    purge:
+      description: "șterge până la 100 de mesaje anterioare"
+      invalidNum: "număr invalid, trebuie să fie de la 1 până la 100"
+      deleting: "se șterg mesajele..."
+      failedToRetrieve: "returnarea mesajelor a eșuat"
+      couldNotRetrieve: "nu s-au putut returna mesajele"
+    poll:
+      description: "face un sondaj"
+    settrigger:
+      description: "setează un nou mecanism de declanșare pentru bot."
+    shutdown:
+      description: "închide bot-ul."
+      shutting: "Se închide..."
+    reload:
+      description: "reîncarcă configurația pentru MineCordBot."
+      reloaded: "Configurația pentru Minecordbot a fost reîncărcată!"
+    eval:
+      description: "JavaScript eval()"
+    mcmd:
+      description: "Execută comenzi de Minecraft prin Discord."
+      cannot-cast: "Comanda aceea nu poate fi executată de Discord pentru că DiscordPlayerCommandSender personalizat nu poate fi transformat în CraftPlayer. \n\nExecută comandă în joc."
+      error: "Comanda nu poate fi trimisă de Discord. Te rog înregistrează-te în joc pentru a executa comanda"
+    setgame:
+      description: "setează jocul discord bot-ului tău."
+      changed: "Jocul setat la %s!"
+      notplaying: "%s nu se mai joacă nimic"
+      playing: "%s se joacă acum"
+    setavatar:
+      description: "setează poza de profil a discord bot-ului tău."
+      changed: "Poza de profil a bot-ului a fost schimbată!"
+      invalid: "invalid sau fără URL"
+      failed: "Setarea avatarului a eșuat"
+      couldNotLoad: "nu se poate încărca imaginea de la URL furnizat"
+    setusername:
+      description: "setează numele de utilizator a discord bot-ului tău."
+      changed: "Numele de utilizator a fost schimbat!"
+      limit: "numele de utilizator se poate schimba de două ori pe oră"
+      invalid: "numele de utilizator este invalid"
+    setnickname:
+      description: "setează porecla discord bot-ului tău."
+      changed: "Porecla a fost schimbată!"
+    ping:
+      description: "verifică timpul de răspuns al bot-ului."
+    help:
+      description: "Arată o listă a comenzilor și arată utilizarea fiecareia dintre comenzi."
+      required: "Argumente necesaree"
+      optional: "Argumente opționale"
+      more: "Pentru ajutor mai detaliat, fă %s<command> help."
+      too-much-args: "ai pus prea multe argumente."
+      no-such-command: "Nu există comanda %s."
+      list:
+        header: "Comenzi de MineCordBot"
+        info: "Comenzi Informative"
+        fun: "Comenzi de Distracție"
+        help: "Comenzi de Ajutor"
+        mod: "Comenzi de Moderare a Server-ului"
+        misc: "Comenzi Diverse"
+        special: "Comenzi Speciale"
+    list:
+      description: "arată o listă a tuturor jucătorilor activi pe Server-ul de Minecraft."
+      header: "Jucători Activi"
+      no-players: "Nu este niciun jucător online..."
+      listing: "Se face o listă a jucătorilor..."
+    info:
+      description: "Află informații despre MineCordBot și despre bot."
+      minfo:
+        generalinfo_header: "== Informații generale =="
+        nonick: "Bot-ul nu are o poreclă."
+        version: "Versiune"
+        textchannel: "Canale de Text"
+        voicechannel: "Canale de Voce"
+        uptime: "Timp-ul deschis"
+        botinfo_header: "=== Informații despre Bot ==="
+        clientid: "ID-ul de Client al Bot-ului"
+        botname: "Numele Bot-ului"
+        botnick: "Porecla Bot-ului"
+        footer: "=== Mai multe informații ==="
+    textchannel:
+      description: "adaugă, șterge sau arată o list a canalelor de text care sunt legate la MCB"
+      invalid-tc: "Canalul de Text `%s` nu este un canal de text valid."
+      added-tc: "Canalul de Text `%s` a fost adaugăt la canalele legate."
+      tc-not-bound: "Canalul de Text `%s` nu este legat de Minecraft."
+      last-tc: "Nu se poate șterge canalul de text `%s` deoarece este ultimul canal de text pe listă."
+      removed-tc: "Canalul de Text `%s` a fost șters de pe listă."
+      list:
+        header: "Canale de Text legate"
+        guild_name: "Numele Guild-ului"
+        channel_name: "Numele Canalului"
+      subcommand:
+        list:
+          description: "arată o listă a toate canalele de text legate"
+        add:
+          description: "adaugă un nou canal legat"
+        remove:
+          description: "șterge un canal legat"
+  messenger:
+    no-player: "Jucătorul {player} nu poate fi găsit."
+    

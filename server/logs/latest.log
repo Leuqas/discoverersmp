@@ -1,0 +1,185 @@
+[04:32:17] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[04:32:20] [Worker-Main-1/INFO]: Loaded 7 recipes
+[04:32:23] [Server thread/INFO]: Starting minecraft server version 1.18.2
+[04:32:23] [Server thread/WARN]: ****************************
+[04:32:23] [Server thread/WARN]: YOU ARE RUNNING THIS SERVER AS AN ADMINISTRATIVE OR ROOT USER. THIS IS NOT ADVISED.
+[04:32:23] [Server thread/WARN]: YOU ARE OPENING YOURSELF UP TO POTENTIAL RISKS WHEN DOING THIS.
+[04:32:23] [Server thread/WARN]: FOR MORE INFORMATION, SEE https://madelinemiller.dev/blog/root-minecraft-server/
+[04:32:23] [Server thread/WARN]: ****************************
+[04:32:23] [Server thread/INFO]: Loading properties
+[04:32:23] [Server thread/INFO]: This server is running Paper version git-Paper-237 (MC: 1.18.2) (Implementing API version 1.18.2-R0.1-SNAPSHOT) (Git: b55ba19)
+[04:32:24] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:32:24] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:32:24] [Server thread/INFO]: Default game type: SURVIVAL
+[04:32:24] [Server thread/INFO]: Generating keypair
+[04:32:24] [Server thread/INFO]: Starting Minecraft server on *:25565
+[04:32:24] [Server thread/INFO]: Using epoll channel type
+[04:32:25] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[04:32:25] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[04:32:26] [Server thread/ERROR]: [STDERR] [org.bukkit.craftbukkit.v1_18_R2.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[04:32:36] [Server thread/WARN]: Legacy plugin SimpleRamChecker v3.0 does not specify an api-version.
+[04:32:36] [Server thread/INFO]: [MobHeads] Loading 1 libraries... please wait
+[04:32:36] [Server thread/INFO]: [MobHeads] Loaded library /home/yleuqas/mcserver/server/libraries/net/axay/kspigot/1.17.4/kspigot-1.17.4.jar
+[04:32:36] [Server thread/INFO]: [MobHeads] Loaded library /home/yleuqas/mcserver/server/libraries/org/jetbrains/kotlinx/kotlinx-serialization-json-jvm/1.2.2/kotlinx-serialization-json-jvm-1.2.2.jar
+[04:32:36] [Server thread/INFO]: [MobHeads] Loaded library /home/yleuqas/mcserver/server/libraries/org/jetbrains/kotlin/kotlin-stdlib-common/1.5.20/kotlin-stdlib-common-1.5.20.jar
+[04:32:36] [Server thread/INFO]: [MobHeads] Loaded library /home/yleuqas/mcserver/server/libraries/org/jetbrains/kotlinx/kotlinx-serialization-core-jvm/1.2.2/kotlinx-serialization-core-jvm-1.2.2.jar
+[04:32:36] [Server thread/INFO]: [MobHeads] Loaded library /home/yleuqas/mcserver/server/libraries/org/jetbrains/kotlin/kotlin-stdlib/1.5.20/kotlin-stdlib-1.5.20.jar
+[04:32:36] [Server thread/INFO]: [MobHeads] Loaded library /home/yleuqas/mcserver/server/libraries/org/jetbrains/annotations/13.0/annotations-13.0.jar
+[04:32:36] [Server thread/INFO]: [MobHeads] Loaded library /home/yleuqas/mcserver/server/libraries/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.5.1/kotlinx-coroutines-core-jvm-1.5.1.jar
+[04:32:36] [Server thread/INFO]: [MobHeads] Loaded library /home/yleuqas/mcserver/server/libraries/org/jetbrains/kotlinx/kotlinx-coroutines-jdk8/1.5.1/kotlinx-coroutines-jdk8-1.5.1.jar
+[04:32:36] [Server thread/INFO]: [MobHeads] Loaded library /home/yleuqas/mcserver/server/libraries/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.5.21/kotlin-stdlib-jdk8-1.5.21.jar
+[04:32:36] [Server thread/INFO]: [MobHeads] Loaded library /home/yleuqas/mcserver/server/libraries/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.5.21/kotlin-stdlib-jdk7-1.5.21.jar
+[04:32:36] [Server thread/ERROR]: Could not load 'plugins/DiscordSRV-Build-1.25.0.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.RuntimeException: Failed to load config
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:157) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:415) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:323) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_18_R2.CraftServer.loadPlugins(CraftServer.java:417) ~[paper-1.18.2.jar:git-Paper-237]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:288) ~[paper-1.18.2.jar:git-Paper-237]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1165) ~[paper-1.18.2.jar:git-Paper-237]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317) ~[paper-1.18.2.jar:git-Paper-237]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+Caused by: java.lang.RuntimeException: Failed to load config
+	at github.scarsz.discordsrv.DiscordSRV.<init>(DiscordSRV.java:430) ~[DiscordSRV-Build-1.25.0.jar:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128) ~[?:?]
+	at jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:347) ~[?:?]
+	at java.lang.Class.newInstance(Class.java:645) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:83) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:153) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	... 7 more
+Caused by: org.yaml.snakeyaml.scanner.ScannerException: while scanning a simple key
+ in 'string', line 9, column 1:
+    BotToken "OTUwNTM3ODM0MzU0MzI3Nj ... 
+    ^
+could not find expected ':'
+ in 'string', line 11, column 1:
+    # Channel links from game to Discord
+    ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.stalePossibleSimpleKeys(ScannerImpl.java:505) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.scanner.ScannerImpl.needMoreTokens(ScannerImpl.java:320) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:250) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:628) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:166) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:59) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:45) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:140) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:119) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeScalarNode(Composer.java:214) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:184) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:314) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:305) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:286) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:188) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:115) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:142) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:151) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:491) ~[snakeyaml-1.30.jar:?]
+	at org.yaml.snakeyaml.Yaml.loadAs(Yaml.java:470) ~[snakeyaml-1.30.jar:?]
+	at github.scarsz.configuralize.Provider.load(Provider.java:28) ~[DiscordSRV-Build-1.25.0.jar:?]
+	at github.scarsz.configuralize.Provider.loadValues(Provider.java:56) ~[DiscordSRV-Build-1.25.0.jar:?]
+	at github.scarsz.configuralize.Provider.load(Provider.java:52) ~[DiscordSRV-Build-1.25.0.jar:?]
+	at github.scarsz.configuralize.DynamicConfig.loadAll(DynamicConfig.java:96) ~[DiscordSRV-Build-1.25.0.jar:?]
+	at github.scarsz.discordsrv.DiscordSRV.<init>(DiscordSRV.java:428) ~[DiscordSRV-Build-1.25.0.jar:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128) ~[?:?]
+	at jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:347) ~[?:?]
+	at java.lang.Class.newInstance(Class.java:645) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:83) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:153) ~[paper-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	... 7 more
+[04:32:36] [Server thread/INFO]: [AutoMessage] Loading AutoMessage v1.0
+[04:32:36] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v14.1.13
+[04:32:36] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v4.2.1
+[04:32:36] [Server thread/INFO]: [ViaVersion] ViaVersion 4.2.1 is now loaded, injecting!
+[04:32:37] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading 1.12 -> 1.13 mappings...
+[04:32:37] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.13 -> 1.13.2 mappings...
+[04:32:37] [Via-Mappingloader-2/INFO]: [ViaVersion] Loading 1.13.2 -> 1.14 mappings...
+[04:32:37] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.14 -> 1.15 mappings...
+[04:32:37] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[04:32:37] [Via-Mappingloader-4/INFO]: [ViaVersion] Loading 1.15 -> 1.16 mappings...
+[04:32:37] [Via-Mappingloader-2/INFO]: [ViaVersion] Loading 1.16 -> 1.16.2 mappings...
+[04:32:38] [Via-Mappingloader-3/INFO]: [ViaVersion] Loading 1.16.2 -> 1.17 mappings...
+[04:32:38] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading 1.17 -> 1.18 mappings...
+[04:32:38] [Server thread/INFO]: [ChangeSlots] Loading ChangeSlots v2.4.0
+[04:32:38] [Server thread/INFO]: [SimpleRamChecker] Loading SimpleRamChecker v3.0
+[04:32:38] [Server thread/INFO]: [MobHeads] Loading MobHeads v1.2.1
+[04:32:38] [Server thread/INFO]: [LaggRemover] Loading LaggRemover v2.0.6
+[04:32:38] [Server thread/INFO]: [dynmap] Loading dynmap v3.4-beta-2-761
+[04:32:38] [Server thread/INFO]: [dynmap] version=git-Paper-237 (MC: 1.18.2)
+[04:32:38] [Server thread/INFO]: [dynmap] Mod Support API available
+[04:32:38] [Server thread/INFO]: [Chunky] Loading Chunky v1.2.164
+[04:32:38] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[04:32:38] [Server thread/INFO]: [MobHeads] Enabling MobHeads v1.2.1
+[04:32:38] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[04:32:38] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[04:32:38] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[04:32:38] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[04:32:38] [Server thread/INFO]: Preparing level "world"
+[04:32:51] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[04:32:52] [Server thread/INFO]: Time elapsed: 644 ms
+[04:32:52] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[04:32:52] [Server thread/INFO]: Time elapsed: 255 ms
+[04:32:52] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[04:32:52] [Server thread/INFO]: Time elapsed: 303 ms
+[04:32:52] [Server thread/INFO]: [AutoMessage] Enabling AutoMessage v1.0
+[04:32:53] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v14.1.13
+[04:32:54] [Server thread/INFO]: [SkinsRestorer] Detected Minecraft v1_18_R2, using MappingSpigotSkinRefresher.
+[04:32:54] [Server thread/INFO]: [SkinsRestorer] [ACF] Enabled Asynchronous Tab Completion Support!
+[04:33:03] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v4.2.1
+[04:33:03] [Server thread/INFO]: [ChangeSlots] Enabling ChangeSlots v2.4.0
+[04:33:03] [Server thread/INFO]: [SimpleRamChecker] Enabling SimpleRamChecker v3.0*
+[04:33:04] [Server thread/INFO]: [LaggRemover] Enabling LaggRemover v2.0.6
+[04:33:04] [Server thread/INFO]: [LaggRemover] Loaded 0 module(s)
+[04:33:04] [Server thread/INFO]: [LaggRemover] The LaggRemover AI is now active!
+[04:33:04] [Server thread/INFO]: [LaggRemover] LaggRemover has been enabled!
+[04:33:04] [Server thread/INFO]: [dynmap] Enabling dynmap v3.4-beta-2-761
+[04:33:04] [Server thread/INFO]: [dynmap] Added 18 custom biome mappings
+[04:33:04] [Server thread/INFO]: [dynmap] Using Bukkit Permissions (superperms) for access control
+[04:33:04] [Server thread/INFO]: [dynmap] Web interface permissions only available for online users
+[04:33:05] [Server thread/INFO]: [dynmap] Mod Support processing completed
+[04:33:15] [Server thread/INFO]: [dynmap] Loaded 27 shaders.
+[04:33:15] [Server thread/INFO]: [dynmap] Loaded 83 perspectives.
+[04:33:15] [Server thread/INFO]: [dynmap] Loaded 22 lightings.
+[04:33:15] [Server thread/INFO]: [dynmap] Starting enter/exit processing
+[04:33:15] [Dynmap Render Thread/INFO]: [dynmap] Finish marker initialization
+[04:33:15] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:25566
+[04:33:15] [Server thread/INFO]: [dynmap] version 3.4-beta-2-761 is enabled - core version 3.4-beta-2-761
+[04:33:15] [Server thread/INFO]: [dynmap] For support, visit our Discord at https://discord.gg/s3rd5qn
+[04:33:15] [Server thread/INFO]: [dynmap] For news, visit https://reddit.com/r/Dynmap or follow https://twitter.com/Dynmap
+[04:33:15] [Server thread/INFO]: [dynmap] To report or track bugs, visit https://github.com/webbukkit/dynmap/issues
+[04:33:15] [Server thread/INFO]: [dynmap] If you'd like to donate, please visit https://www.patreon.com/dynmap or https://ko-fi.com/michaelprimm
+[04:33:16] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'world'.
+[04:33:16] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_nether'.
+[04:33:16] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_the_end'.
+[04:33:16] [Server thread/INFO]: [dynmap] Enabled
+[04:33:16] [Server thread/INFO]: [Chunky] Enabling Chunky v1.2.164
+[04:33:16] [Server thread/INFO]: Running delayed init tasks
+[04:33:16] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.18.2 (758)
+[04:33:16] [Server thread/WARN]: [ViaVersion] ViaVersion does not have any compatible versions for this server version!
+[04:33:16] [Server thread/WARN]: [ViaVersion] Please remember that ViaVersion only adds support for versions newer than the server version.
+[04:33:16] [Server thread/WARN]: [ViaVersion] If you need support for older versions you may need to use one or more ViaVersion addons too.
+[04:33:16] [Server thread/WARN]: [ViaVersion] In that case please read the ViaVersion resource page carefully or use https://jo0001.github.io/ViaSetup
+[04:33:16] [Server thread/WARN]: [ViaVersion] and if you're still unsure, feel free to join our Discord-Server for further assistance.
+[04:33:16] [Server thread/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
+[04:33:16] [Server thread/INFO]: Done (53.233s)! For help, type "help"
+[04:33:16] [Server thread/INFO]: Timings Reset
+[04:33:16] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [SkinsRestorer] ----------------------------------------------
+[04:33:16] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [SkinsRestorer]     +==================+
+[04:33:16] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
+[04:33:16] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [SkinsRestorer]     |------------------|
+[04:33:16] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [SkinsRestorer]     |  Standalone Mode |
+[04:33:16] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [SkinsRestorer]     +==================+
+[04:33:16] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [SkinsRestorer] ----------------------------------------------
+[04:33:16] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [SkinsRestorer]     Current version: 14.1.13
+[04:33:16] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [SkinsRestorer]     This is the latest version!
+[04:33:16] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [SkinsRestorer] ----------------------------------------------
+[04:33:21] [Server thread/INFO]: Join our discord at https://discord.gg/DZRQfFJmKn !
+[04:35:21] [Server thread/INFO]: Link your discord to your minecraft so you can have access to proximity chat! on our discord, go to #smp-anouncments for more info

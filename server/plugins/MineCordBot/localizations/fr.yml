@@ -1,0 +1,176 @@
+mcb:
+  responselevel:
+    lvl1: "Succès"
+    lvl2: "Attention"
+    lvl3: "Erreur"
+    default: "Réponse"
+  event:
+    start: "Le serveur a démarré avec succès !"
+    shut: "Le serveur s'éteint !"
+  command:
+    no-perm-message: "Vous n'avez pas accès à cette commande."
+    invalid-arguments: "Arguments invalides."
+    invalid-tc: "Salon textuel invalide pour la commande."
+    no-alias: "Il n'y a pas d'autre alias pour cette commande."
+    fatal-error: "Une erreur fatale a été détectée avant que l'éxécution de la commande %s soit finie."
+  commands:
+    diagnostics:
+      description: "Envoie un diagnostique pour aider à localiser une panne ou anomalie!"
+    perm:
+      description: "Gérer permissions pour les catégories."
+      invalid-sub: "%s n'est une sous commande"
+      no-role: "Le role %s n'existe pas dans cette guilde."
+      sub:
+        set:
+          description: "Mettre un rôle pour certaines catégories. \nUsage: {+} pour autoriser {-} pour interdire. \nFlags: {-<command|category|all>} or {+<command|category|all}. \nie: {-tps} | {+info}"
+          invalid-flag: "%s est un flag invalide."
+          flag-not-null: "Tu dois mettre un ou plusieurs flag(s)!"
+          all-invalid-flags: "Tous les flags indiqués sont invalides."
+          success: "Permission(s) mise(s) avec succès pour le role %s"
+          omitted-flags: "Le(s) flag(s) suivant(s) est/sont invalide(s) et ont été ommis: %s"
+          added: "Les flags suivants ont été ajoutés: %s"
+        check:
+          description: "Regarder les permissions actuelles pour un rôle."
+          all-description: "Tous les rôles qui ont des permissions et leurs flags."
+          success: "Indicateurs de permissions : %s."
+          role-no-perm: "%s n'a pas de flag de permission."
+        remove:
+          description: "Retirer le flag d'une permission ou tous les flags de permission à un rôle."
+          success-single: "Le flag de la permission %s a été supprimé de %s."
+          success-ignore: "Les flags des permissions ont été supprimés de %s"
+          success-ignore-detail: "%s n'a pas les flags suivants et a été ignoré: %s"
+          success-provided: "Suppression réussie des flags d'autorisation de %s"
+          success-provided-detail: "Nouvelle permission: %s"
+          success-all: "Tous les flags de permission ont été supprimés de %s"
+          success-all-detail: "Supprimés: %s"
+          role-no-perm: "%s n'a pas de flag de permission."
+          role-no-specific-perm: "%s n'a pas les flags et les permissons: %s."
+    mcserver:
+      description: "Regarder les informations du serveur."
+      cannot-find: "Impossible de pinger le serveur."
+      error: "Il y a eu un serveur dans le pingage du serveur."
+    mcskin:
+      description: "Regarder le skin de quelqu'un."
+      cannot-find: "Impossible de trouver le skin de quelqu'un."
+      error: "Il y a eu une erreur dans ta requête."
+    tps:
+      description: "Regarder les TPS du serveur et d'autres statistiques."
+      title: "Les ticks du serveur chaque seconde et l'usage de la mémoire."
+    mcusername:
+      description: "Avoir le pseudo d'un UUID."
+      cannot-find: "Impossible de trouver un joueur pour cet UUID ! Ce joueur a-t-il un compte premium ?"
+      error: "Impossible de parvenir à faire la requête. Mojang est peut-être hors service ?"
+    mcuuid:
+      description: "Avoir l'UUID d'un joueur."
+      cannot-find: "Impossible de trouver le joueur ! Ce joueur a-t-il un compte premium ?"
+      error: "Impossible de parvenir à faire la requête. Mojang est peut-être hors service ?"
+    mcstat:
+      description: "Regarder tous les status des serveurs de Mojang."
+    start:
+      description: "démarrer le bot."
+      starting: "Démarrage du bot...."
+    spoiler:
+      description: "créer un gif spoiler"
+      includeText: "ajoutez un texte pour le spoiler"
+      tooManyLines: "trop de lignes. La limite est de 8."
+      spoilerPreview: "[ Passer la souris pour voir le spoiler ]"
+      failedToGenerate: "la génération du spoiler a échoué"
+    purge:
+      description: "supprimer jusqu'à 100 messages précédents"
+      invalidNum: "mauvaise valeur, choisissez un nombre entre 1 et 100"
+      deleting: "suppression du message..."
+      failedToRetrieve: "échec lors de la recherche des messages"
+      couldNotRetrieve: "impossible de retrouver les messages"
+    poll:
+      description: "créer un sondage"
+    settrigger:
+      description: "définir un caractère trigger pour les commandes bot."
+      changed: "nouveau trigger: %s"
+      invalid: "%s ne peut pas servir de trigger"
+    shutdown:
+      description: "éteindre le bot."
+      shutting: "Je m'éteinsblblblbllb..."
+    reload:
+      description: "recharger la config MineCordBot"
+      reloaded: "Config Minecordbot rechargée !"
+    eval:
+      description: "JavaScript eval()"
+    mcmd:
+      description: "executer une commande Minecraft depuis Discord."
+      cannot-cast: "Cette commande ne peut pas être exécutée à partir de Discord car le DiscordPlayerCommandSender personnalisé ne peut pas être casté vers CraftPlayer. \ n \ nExécutez la commande dans le jeu."
+      error: "La commande ne peut pas être envoyée à partir de Discord. Veuillez vous connecter dans le jeu pour exécuter la commande"
+    setgame:
+      description: "définir le jeu du bot Discord."
+      changed: "Jeu défini : %s !"
+      notplaying: "%s ne joue à aucun jeu"
+      playing: "%s joue"
+    setavatar:
+      description: "définir l'avatar du bot."
+      changed: "L'avatar du bot a été modifié !"
+      invalid: "URL invalide ou manquante"
+      failed: "erreur lors du changement d'avatar'"
+      couldNotLoad: "l'image indiquée n'a pas pu être chargée"
+    setusername:
+      description: "définir le nom utilisateur du bot."
+      changed: "Nom modifié !"
+    setnickname:
+      description: "définir le surnom du bot discord."
+      changed: "Surnom modifié !"
+      limit: "le surnon ne peut être modifier que 2 fois toutes les heures"
+      invalid: "le surnom est invalide"
+    ping:
+      description: "tester le temps de réponse du bot."
+    help:
+      description: "lister les commandes/obtenir les infos sur une commande."
+      required: "Arguments requis"
+      optional: "Arguments optionnels"
+      more: "Pour plus de détails, tape %s<command> help."
+      too-much-args: "trop d'arguments."
+      no-such-command: "La commande %s n'existe pas."
+      list:
+        header: "Commandes MineCordBot"
+        info: "Commandes d'information"
+        fun: "Commandes pour le fun"
+        help: "Commandes d'aide"
+        mod: "Commandes de modération serveur"
+        misc: "Commandes diverses"
+        special: "Commandes spéciales"
+    list:
+      description: "lister les joueurs connectés sur Minecraft."
+      header: "Joueurs Connectés au Serveur Minecraft"
+      no-players: " Il n'y a aucun joueur en ligne"
+      listing: "Liste des joueurs en cours de traitement..."
+    info:
+      description: "obtenir les informations sur MineCordBot et sur le bot"
+      minfo:
+        generalinfo_header: "== Infos Globales =="
+        nonick: "Le bot n'a pas de surnom."
+        version: "Version"
+        textchannel: "Salons Textuels"
+        voicechannel: "Salons Vocaux"
+        uptime: "Allumé Depuis"
+        botinfo_header: "=== Infos Bot ==="
+        clientid: "ID Client Bot"
+        botname: "Nom du Bot"
+        botnick: "Surnom du Bot"
+        footer: "=== Plus d'Infos ==="
+    textchannel:
+      description: "ajouter/retirer/lister les salons textuels connectés à MineCordBot"
+      invalid-tc: "Le salon textuel `%s` n'est pas un salon valide."
+      added-tc: "Salon textuel `%s` ajouté aux salons connectés."
+      tc-not-bound: "Le salon textuel `%s` n'est pas connecté à Minecraft"
+      last-tc: "Le salon textuel `%s` ne peut pas être retiré car c'est le dernier salon sur la liste"
+      removed-tc: "Salon `%s` retiré de la liste"
+      list:
+        header: "Salons Textuels Connectés"
+        guild_name: "Nom de Guilde"
+        channel_name: "Nom du Salon"
+      subcommand:
+        list:
+          description: "lister tous les salons reliés"
+        add:
+          description: "relier un nouveau salon"
+        remove:
+          description: "supprimer le salon relié"
+  messenger:
+    no-player: "{player} est introuvable."

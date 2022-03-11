@@ -1,0 +1,12 @@
+# +----------------------------------------------------+ #
+# <              Permission Configuration              > #
+# <                                                    > #
+# <        can be configured using perm command        > #
+# +----------------------------------------------------+ #
+
+# Permission for users that doesn''t have a role
+# or if a role doesn''t have permission flags
+Default: '{-all}, {+Help}, {+info}, {+Misc}'
+RoleID:
+  RoleName: sample
+  Permission: '{-category} {+command}'

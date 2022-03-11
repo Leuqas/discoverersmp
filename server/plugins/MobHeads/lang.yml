@@ -1,0 +1,21 @@
+#-------------------------------------------------------#
+#            Head Drops -> Language Config              #
+#-------------------------------------------------------#
+#                    INFORMATION                        #
+# -> You can copy this file and rename it any Language  #
+#    to save it for later use. Only Configs called      #
+#    `lang.yml` will be detected!                       #
+#-------------------------------------------------------#
+#                     PLACEHOLDER                       #
+# Color Codes -> &1-9 + &a-r                            #
+# Custom Input (dont try to use it) -> %INPUT%          #
+# Executor Name -> %EXECUTOR%                           #
+#-------------------------------------------------------#
+
+Commands:
+  Main:
+    Help: "Usage: §9/mb [action] [...]\n§7>> §9Config §7- Main Command for Config management"
+  Config:
+    Help: "Usage: §9/mb config [reload - reset]\n§7>> §9reload§7 - Load up all Configs from disk (override)\n>> §9reset §7- All settings will reset to default (!warning!)"
+    Reload: "§aConfig successfully reloaded from disk!"
+    Reset: "§aConfig successfully reset to default!"

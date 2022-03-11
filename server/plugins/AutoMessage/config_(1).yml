@@ -1,0 +1,16 @@
+TellRawMessages:
+- '{"text":"[Get more info on TellRaws here: minecraft.tools/en/tellraw.php ]","color":"dark_purple"}'
+- '{"text":"[This is a test message!] ","color":"aqua"}'
+- '["",{"text":"Click me to open URL!","color":"red","bold":true,"underlined":false,"clickEvent":{"action":"open_url","value":"https://www.google.com"}}]'
+- '{"text":"Hover over me for help text!","color":"yellow","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"I
+  am a hint!","color":"yellow","bold":true}]}}}'
+- '{"text":"Click me to run help command!","color":"yellow","bold":true,"clickEvent":{"action":"run_command","value":"/help"}}'
+timer: 120
+Random: false
+UseTellRawMessages: false
+Messages:
+- '&eJoin our discord at https://discord.gg/DZRQfFJmKn !'
+- '&cLink your discord to your minecraft so you can have access to proximity chat!
+  on our discord, go to #smp-anouncments for more info'
+- '&eWant to know where other players are? what they are doing? well simply visit
+  our dynmap/world map at http://discoverersmap.tk/'

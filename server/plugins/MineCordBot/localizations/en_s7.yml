@@ -1,0 +1,170 @@
+mcb:
+  responselevel:
+    lvl1: "Success"
+    lvl2: "Warning"
+    lvl3: "Error"
+    default: "Retort"
+  event:
+    start: "Weigh anch'r, we be leaving harbor, men!"
+    shut: "The ship has run aground!"
+  command:
+    no-perm-message: "Ye can't yell out the order, it fo' d' captain!"
+    invalid-arguments: "Snoody n'sults, lass."
+    invalid-tc: "Yer usin' th' wrong chat."
+    no-alias: "Ya betta' use me propper name, boy!"
+    fatal-error: "A fatal blow twas struck while %s was being loaded in the 68-pounder."
+  commands:
+    perm:
+      description: "Manage privileges fer categories."
+      invalid-sub: "%s be not a sub command"
+      no-role: "%s job doesn't exist on this port."
+      sub:
+        set:
+          description: "Set a job fer certain categories. \nUsage: {+} t' allow {-} t' prevent. \nFlags: {-<command|category|all>} or {+<command|category|all}. \nie: {-tps} | {+info}"
+          invalid-flag: "%s be an invalid flag."
+          flag-not-null: "Ye must provide at least one flag!"
+          all-invalid-flags: "All provided flags be invalid."
+          success: "Successfully set privilege fer %s"
+          omitted-flags: "Th' followin' flag(s) be invalid and have been omitted: %s"
+          added: "Th' followin' have been added: %s"
+        check:
+          description: "Check th' current privileges o' a job."
+          all-description: "All jobs that have privileges and their correspondin' liberty"
+          success: "%s privileges."
+          role-no-perm: "%s does not have any liberty."
+        remove:
+          description: "Remove a privilege or all freedom o' a job."
+          success-single: "%s privilege be removed from %s."
+          success-ignore: "Successfully removed privileges from %s"
+          success-ignore-detail: "%s doesn't have th' followin' flags and have been ignored: %s"
+          success-provided: "Successfully removed privileges from %s"
+          success-provided-detail: "New privilege: %s"
+          success-all: "All privileges have been removed from %s"
+          success-all-detail: "Cleaved: %s"
+          role-no-perm: "%s does not have any privileges."
+          role-no-specific-perm: "%s does not have th' followin' privileges: %s."
+    mcserver:
+      description: "Search th' logs fer information on a ship"
+      cannot-find: "No vessal by that name be constructed..."
+      error: "There seems t' be some pages missin'."
+    mcskin:
+      description: "Lets check if yer face matches yer wanted portrait."
+      cannot-find: "Are ye sure that`s a swashbuckler? Dasn't seem t' be wanted."
+      error: "Appears a soldier tookst some portraits down."
+    tps:
+      description: "Check fer a pulse an' cognitive function."
+      title: "Ser'er ticks ever' second an' memory usage."
+    mcusername:
+      description: "Check th' name o' th' shipmate bearin' that scar."
+      cannot-find: "Nobody matches that description! Be they a ghost?"
+      error: "Couldna process request. Be Mojang down?"
+    mcuuid:
+      description: "Observe that swashbuckler fer unique scars."
+      cannot-find: "Nobody matches that description! Be they a ghost?"
+      error: "Couldna process request. Be Mojang down?"
+    mcstat:
+      description: "Check th' docks fer amenities"
+    start:
+      description: "Hoist th' anchor!"
+      starting: "Hoisting th' anchor..."
+    spoiler:
+      description: "Create a secret haunted paintin'."
+      includeText: "Please provide a text fer th' secret"
+      tooManyLines: "There be too many rows. Ortin' ta be less than or equal t' 8. "
+      spoilerPreview: "[ Ho'er o'er t' reveal secret. ]"
+      failedToGenerate: "Failed t' generate secret paintin'..."
+    purge:
+      description: "Take aft yer words, up t' 100."
+      invalidNum: "That number dasn't fit on me abacus."
+      deleting: "Burnin' messages..."
+      failedToRetrieve: "Failed t' retrieve messages."
+      couldNotRetrieve: "Couldna retrieve messages"
+    poll:
+      description: "Ask yer crew fer the'r opinions."
+    settrigger:
+      description: "Fetch me some new gun powd'r - can't fire this grapeshot w'thout it."
+    shutdown:
+      description: "Batt'n down th' hatches and drop th' anchor."
+      shutting: "Shutting down..."
+    reload:
+      description: "Rearm thy mattie."
+      reloaded: "First Mate Minecord, reportin' fer duty."
+    eval:
+      description: "Javanese arithmatic"
+    mcmd:
+      description: "Fire th' ship's cannons, First Mate Minecord!."
+      cannot-cast: "Ye order's weren't relayed from the pub. DiscordPlayerCommandSender shant be casted to CraftPlayer wilst drunk. \n\nMake 'em walk the plank once we be over rough water."
+      error: "Tis unwise to command from the pub, captain... Consider doing so from yer ship instead?"
+    setgame:
+      description: "Hoist the flag high!"
+      changed: "Setting sail towards %s!"
+      notplaying: "%s no longer playing anything"
+      playing: "%s now playing"
+    setavatar:
+      description: "Make ye First Mate don another colour."
+      changed: "Ye First Mate be wear'n propper colours, now!"
+      invalid: "Tha's th' smithy, not th' seamstress..."
+      failed: "Looks like th' First Mate be too fat."
+      couldNotLoad: "Looks like th' fabric be soiled. We`ll be havin' t' find a new supply."
+    setusername:
+      description: "Mattie, ye need a new name."
+      changed: "%s changed their name to '%s'"
+      limit: "Names can only be changed twice per hour"
+      invalid: "Quit speakin' in tounges!"
+    ping:
+      description: "How long till we reach land?"
+    help:
+      description: "Convey all o' the captain's orders and tell th' quartermaster."
+      required: "Necessities"
+      optional: "Niceties"
+      more: "Fer more detailed help, do %s<command> help."
+      too-much-args: "Too much liqour. Sober up a bit, Captain."
+      no-such-command: "Captain, %s is not an order."
+      list:
+        header: "Captain's Orders"
+        info: "Let William Teach!"
+        fun: "Rum for everyone!"
+        help: "Man Overboard!"
+        mod: "Swimming Lessons"
+        misc: "Munitions"
+        special: "Navigator's Diptych Dial"
+    list:
+      description: "Take role, Mr. 'CordBot"
+      header: "Online Players"
+      no-players: "There are no players online..."
+      listing: "Listing players..."
+    info:
+      description: "Know thy First Mate"
+      minfo:
+        generalinfo_header: "== General InfoCmd =="
+        nonick: "Hrm... His Christian name will have to do."
+        version: "Family Generation"
+        textchannel: "Learn'ed caligraphy"
+        voicechannel: "Shanties"
+        uptime: "Days at Sea"
+        botinfo_header: "=== Bot Information ==="
+        clientid: "Bot Client ID"
+        botname: "Bot Name"
+        botnick: "Bot Nickname"
+        footer: "=== More InfoCmd ==="
+    textchannel:
+      usage: "textchannel <add|remove|list> <ID>"
+      description: "add, remove, or list runner boys hired by the First Mate"
+      invalid-tc: "`%s` shant be a runner."
+      added-tc: "Hired `%s` to run messages."
+      tc-not-bound: "`%s` has never been to sea."
+      last-tc: "Can't make `%s` walk th' plank, 'cause he's me nephew."
+      removed-tc: "Fed `%s` to the fishes."
+      list:
+        header: "Message Runners"
+        guild_name: "Guild Name"
+        channel_name: "Runner's Name"
+      subcommand:
+        list:
+          description: "Lists all courier routes"
+        add:
+          description: "Add a new route"
+        remove:
+          description: "Remove a route"
+  messenger:
+    no-player: "{player} ain't on the ship."

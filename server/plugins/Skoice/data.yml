@@ -1,0 +1,36 @@
+# Bot Token
+#   -Required
+# Main Voice Channel ID
+#   -Required
+# category ID
+#   -Required
+# distance
+#   -type : Required
+# checkVersion
+#   -Optional
+#   -atStartup # runs checkVersion at the start of Skoice
+#   -periodically # if enabled, runs every X ticks
+token: OTUwNTM3ODM0MzU0MzI3NjQ0.YiaXVw.idpayrnklEy332epPZyXJoMcJoo
+mainVoiceChannelID: '950703033505939507'
+categoryID: '950633578985844788'
+distance:
+  type: default # default/custom/radius
+  custom:
+    verticalStrength: 40 # The distance in the Y direction
+    horizontalStrength: 80 # The distance in the X direction
+    falloff: 5 # A medium in the distances
+  radius: 20
+checkVersion:
+  atStartup: true
+  periodically:
+    enabled: true
+    delay: 144000 # 2 hours ## use https://mapmaking.fr/tick/ to get tick
+Data:
+  fba84917-74cb-30c3-a01a-8e2752253a14: '527848050983698465'
+  '527848050983698465': fba84917-74cb-30c3-a01a-8e2752253a14
+  4839348f-45b4-380e-9c33-cfe3eebb8fc8: '305233813729050624'
+  '305233813729050624': 4839348f-45b4-380e-9c33-cfe3eebb8fc8
+  2e85d6fe-0229-393c-acfa-b4729d31a4b2: '898388931958145036'
+  '898388931958145036': 2e85d6fe-0229-393c-acfa-b4729d31a4b2
+  3a1ed938-b2d4-3584-8620-4a9ae346d502: '840833178075922453'
+  '840833178075922453': 3a1ed938-b2d4-3584-8620-4a9ae346d502
